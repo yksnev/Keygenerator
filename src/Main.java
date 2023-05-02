@@ -13,6 +13,7 @@ class PasswordGenerator {
         Random rand = new Random();
         for (int i = 0; i < password.length; i++) {
             int type = rand.nextInt(5);
+            //System.out.println("type: " + type);
             if (type == 0) {
                 password[i] = specialCharacters[rand.nextInt(specialCharacters.length)];
             } else if (type == 1) {
