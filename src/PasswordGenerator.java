@@ -1,7 +1,7 @@
 import java.util.Random;
 
 class PasswordGenerator {
-    public static String generatePassword() {
+    protected static String generatePassword() {
         char[] specialCharacters = {'!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+', '?'};
         char[] digits = {'0', '1', '2', '3', '4'};
         char[] caps = {65, 66, 67, 68};
