@@ -7,18 +7,18 @@ public class PasswordGeneratorGUI extends JFrame implements ActionListener {
     private final JLabel passwordLabel;
 
     public PasswordGeneratorGUI() {
-        // Set up the frame
+        
         setTitle("Password Generator");
         setSize(400, 100);
         setLayout(new FlowLayout());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        // Create the generate button
+        
         generateButton = new JButton("Generate");
         generateButton.addActionListener(this);
         add(generateButton);
 
-        // Create the password label
+        
         passwordLabel = new JLabel();
         add(passwordLabel);
 
@@ -28,7 +28,7 @@ public class PasswordGeneratorGUI extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == generateButton) {
-            // Generate the password
+            
             String password = PasswordGenerator.generatePassword();
             passwordLabel.setText(password);
         }
