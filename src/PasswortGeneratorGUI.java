@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.FlowLayout;
 
-public class PasswordGeneratorGUI extends JFrame implements ActionListener {
+class PasswordGeneratorGUI extends JFrame implements ActionListener {
     private final JButton generateButton;
     private final JLabel passwordLabel;
 
